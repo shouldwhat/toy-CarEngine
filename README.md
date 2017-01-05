@@ -15,3 +15,23 @@
     (2). using 'singleton pattern'
 
     (3). using 'delegate', 'event' keyword
+
+-. class
+
+	(1). Car : Main Model Object (Model)
+	
+	(2). CarNavigator : calcurate Head Direction. (Attribute Object of Car)
+	
+	(3). CarHandle : calcurate Handle Angle. (Attribute Object of Car)
+	
+	(4). CarEngine : calcurate Next Moving Point. (Attribute Object of Car)
+	
+	(5). MyMathUtil : calcurate trigonometric function.
+	
+	(6). ReDrawingCarManager : repaint car image. (Event)
+	
+	(7). MovingFinishedManager :  finish moving car. (Event)
+	
+	
+	
+	
