@@ -1,4 +1,12 @@
 # dotnet-carEngine
 
--. 자동차 이동 물리엔진.
--. 프로그램 실행 후 화면의 아무 위치나 클릭 시, 자동차가 이동합니다.
+-. this project explain car-moving-engine.
+
+-. Instructions
+1. execute application.
+2. if left click in canvas panel, car is going to move.
+
+-. using
+1. using 'WPF'
+2. using 'singleton pattern'
+3. using 'delegate', 'event' keyword
