@@ -31,6 +31,7 @@ namespace AboutCarEngine
         {
             this.velocity = 15;
             this.nowPoint = this.destPoint = new Point(0, 0);
+            this.destRange = new RectangleGeometry(new Rect(nowPoint, new Size(15, 15)));
             this.engine = new CarEngine();
             this.handle = new CarHandle();
             this.navigator = new CarNavigator();
@@ -62,9 +63,15 @@ namespace AboutCarEngine
             }
         }
 
+        public void setDestPos(Point destPoint)
+        {
+            this.destPoint = destPoint;
+            this.destRange = new RectangleGeometry(new Rect(new Point(destPoint.X - 15, destPoint.Y - 15), new Size(30, 30)), 0, 0);
+        }
+
         private bool isArrved()
         {
-            return false;
+            return this.destRange.FillContains(this.nowPoint);
         }
 
         public CarNavigator navigator { get; private set; }
@@ -72,6 +79,7 @@ namespace AboutCarEngine
         public CarHandle handle { get; private set; }
         public Point nowPoint { get; private set; }
         public Point destPoint { get; set; }
+        public RectangleGeometry destRange { get; set; }
         public double velocity { get; private set; }
 
     }
