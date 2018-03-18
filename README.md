@@ -1,23 +1,41 @@
 # dotnet-carEngine
 
--. this project explain car-moving-engine.
+* **Instroduce Proejct**
+```
+	*. this project explain car-moving-engine.
+```
 
--. Instructions
+---
 
+* **Instructions**
+```
     (1). execute application.
 
     (2). if left click in canvas panel, car is going to move.
+```
 
--. using
+---
 
-    (1). using 'WPF'
+* **Using**
+```
+    (1). using .NET Framework
 
-    (2). using 'singleton pattern'
+    (2). using 'singleton pattern', 'observer pattern'
 
     (3). using 'delegate', 'event' keyword
+```
 
--. class
+---
 
+* **Class diagram**
+```
+	![](/images/class.png)
+```
+
+---
+
+* **Class**
+```
 	(1). Car : Main Model Object (Model)
 	
 	(2). CarNavigator : calcurate Head Direction. (Attribute Object of Car)
@@ -31,7 +49,15 @@
 	(6). ReDrawingCarManager : repaint car image. (Event)
 	
 	(7). MovingFinishedManager :  finish moving car. (Event)
+```	
 	
-	
-	
-	
+---
+
+* **Sequence diagram**
+```
+
+	*. **Car Moving(=drive())**
+	![](/images/sequence_drive.png)
+```
+
+---
