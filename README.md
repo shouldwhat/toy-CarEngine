@@ -28,9 +28,8 @@
 ---
 
 * **Class diagram**
-```
-	![](/images/class.png)
-```
+
+![](/images/class.png)
 
 ---
 
@@ -54,10 +53,8 @@
 ---
 
 * **Sequence diagram**
-```
 
 	*. **Car Moving(=drive())**
 	![](/images/sequence_drive.png)
-```
 
 ---
